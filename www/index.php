@@ -32,7 +32,7 @@
                 <div class="shadow"></div>
                 <div class="centered_wrap">
                     <div class="block_shape_dashed">
-                        <p class="phone_number">+7 (3952) 456-872</p>
+                        <p class="phone_number">+7 (3952) 611-995</p>-
                         <p class="address">Иркутск, Байкальская 249<br>офис 204а</p>
                         <a class="ui_button ui_button_orange ui_button_black_hover" href="#map">смотреть на карте</a>
                     </div>
@@ -81,10 +81,10 @@
                         <p class="ad_order_desc_callback">И наш менеджер сразу Вам перезвонит!</p>
 
                         <form class="ad_order_form" action="#" method="POST">
-                            <input type="text" name="ad_order_name" placeholder="Введите имя"/>
-                            <input type="text" name="ad_order_connection" placeholder="Введите телефон"/>
+                            <input type="text" id="name1" placeholder="Введите имя"/>
+                            <input type="text" id="phone1" placeholder="Введите телефон"/>
 
-                            <input type="submit" class="ui_button ui_button_blue_hover c_font25" value="ОТПРАВИТЬ"/>
+                            <button id="getcard1" type="button" class="ui_button ui_button_green_hover c_font25">ОТПРАВИТЬ</button>
                         </form>
                     </div>
                 </div>
@@ -249,10 +249,10 @@
                         <p class="ad_order_desc_callback">И наш менеджер сразу Вам перезвонит!</p>
 
                         <form class="ad_order_form" action="#" method="POST">
-                            <input type="text" name="ad_order_name" placeholder="Введите имя"/>
-                            <input type="text" name="ad_order_connection" placeholder="Введите телефон"/>
+                            <input type="text" id="name2" placeholder="Введите имя"/>
+                            <input type="text" id="phone2" placeholder="Введите телефон"/>
 
-                            <input type="submit" class="ui_button ui_button_green_hover c_font25" value="ОТПРАВИТЬ"/>
+                            <button id="getcard2" type="button" class="ui_button ui_button_green_hover c_font25">ОТПРАВИТЬ</button>
                         </form>
                     </div>
                 </div>
@@ -275,7 +275,7 @@
                         <div class="portfolio_item">
                             <div class="portfolioimg">
                                 <noindex>
-                                    <a href="http://divaline.ru/" target="_blank"><img src="/images/1.PNG"></a>
+                                    <a href="http://divaline.ru/" target="_blank"><img src="/images/1.png"></a>
                                 </noindex>
                             </div>
                             <p class="company_name">Сеть магазинов женского нижнего белья Дива Лайн</p>
@@ -283,10 +283,11 @@
                         <div class="portfolio_item">
                             <div class="portfolioimg">
                                 <noindex>
-                                    <a href="http://irkmarket.com/" target="_blank"><img src="/images/2.png"></a>
+									<br>
+                                    <a href="http://lesvzime.ru/" target="_blank"><img style="width: 200px; height: 60px;" src="/images/mercury.png"></a>
                                 </noindex>
                             </div>
-                            <p class="company_name">Интернет-магазин Irkmarket.com</p>
+                            <p class="company_name">Деревообрабатывающее предприятие ООО "Меркурий"</p>
                         </div>
                         <div class="portfolio_item">
                             <div class="portfolioimg">
@@ -348,7 +349,7 @@
                                 <p class="reviewheading">Антонина, ресторатор</p>
                                 <p class="reviewtext">
                                     <i class="say_icon_left"></i>
-                                    Доволен выполненной ребятами работой - сайт получился красивый и удобный, сами ставим новости и фотографии, благо подробные инструкции нам написали. Также хороший логотип сделали, очень дотошно узнавали что же нам понравится.
+                                    Довольна выполненной ребятами работой - сайт получился красивый и удобный, сами ставим новости и фотографии, благо подробные инструкции нам написали. Также хороший логотип сделали, очень дотошно узнавали наши предпочтения!
                                     <i class="say_icon_right"></i>
                                 </p>
                             </div>
