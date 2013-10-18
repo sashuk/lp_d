@@ -9,6 +9,7 @@
         <!--<link rel="stylesheet" href="/dist/css/bootstrap-theme.css">-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
         <script src="//code.jquery.com/jquery.js"></script>
+        <script src="/js/jquery.maskedinput.min.js"></script>
         <!-- Latest compiled and minified JavaScript -->
         <!--<script src="/dist/js/bootstrap.js"></script>-->
         <!-- User styles -->
@@ -34,7 +35,7 @@
                     <div class="block_shape_dashed">
                         <p class="phone_number">+7 (3952) 611-995</p>-
                         <p class="address">Иркутск, Байкальская 249<br>офис 204а</p>
-                        <a class="ui_button ui_button_orange ui_button_black_hover" href="#map">смотреть на карте</a>
+                        <a class="ui_button ui_button_orange ui_button_black_hover" id="look_at_map" href="#map">смотреть на карте</a>
                     </div>
                 </div>
                 <div class="sector_bottom_shadow"></div>
@@ -81,11 +82,14 @@
                         <p class="ad_order_desc_callback">И наш менеджер сразу Вам перезвонит!</p>
 
                         <form class="ad_order_form" action="#" method="POST">
-                            <input type="text" id="name1" placeholder="Введите имя"/>
-                            <input type="text" id="phone1" placeholder="Введите телефон"/>
+                            <input class="form_ad_action_name" type="text" id="name1" placeholder="Введите имя"/>
+                            <div><input class="form_ad_action_phone" type="text" id="phone1" placeholder="Введите телефон"/><span class="change_format">формат</span></div>
 
                             <button id="getcard1" type="button" class="ui_button ui_button_green_hover c_font25">ОТПРАВИТЬ</button>
                         </form>
+                    </div>
+                    <div class="wrap_right tmpl_ad_order_complete">
+                        <span class="ad_order_title">ЗАЯВКА ПРИНЯТА<br>СПАСИБО!</span>
                     </div>
                 </div>
             </div>
@@ -176,7 +180,7 @@
                             <div class="wrap_order">
                                 <i class="hor_line1"></i>
                                 <i class="hor_line2"></i>
-                                <button class="ui_button ui_button_orange ui_button_white_hover">ЗАКАЗАТЬ</button>
+                                <button class="ui_button ui_button_orange ui_button_white_hover form_proposal_1">ЗАКАЗАТЬ</button>
                             </div>
                         </div>
                         <div class="proposal_tab proposal_tab_center">
@@ -199,7 +203,7 @@
                             <div class="wrap_order">
                                 <i class="hor_line1"></i>
                                 <i class="hor_line2"></i>
-                                <button class="ui_button ui_button_orange ui_button_white_hover">ЗАКАЗАТЬ</button>
+                                <button class="ui_button ui_button_orange ui_button_white_hover form_proposal_2">ЗАКАЗАТЬ</button>
                             </div>
                         </div>
                         <div class="proposal_tab proposal_tab_right">
@@ -220,7 +224,7 @@
                             <div class="wrap_order">
                                 <i class="hor_line1"></i>
                                 <i class="hor_line2"></i>
-                                <button class="ui_button ui_button_orange ui_button_white_hover">ЗАКАЗАТЬ</button>
+                                <a class="ui_button ui_button_orange ui_button_white_hover form_proposal_3">ЗАКАЗАТЬ</a>
                             </div>
                         </div>
                     </div>
@@ -231,7 +235,7 @@
 
 
 
-            <div class="tmpl_sector sector_ad_timer_and_order green">
+            <div class="tmpl_sector sector_ad_timer_and_order green form_proposal_order">
                 <div class="centered_wrap">
                     <i class="glare"></i>
                     <div class="wrap_left">
@@ -249,11 +253,14 @@
                         <p class="ad_order_desc_callback">И наш менеджер сразу Вам перезвонит!</p>
 
                         <form class="ad_order_form" action="#" method="POST">
-                            <input type="text" id="name2" placeholder="Введите имя"/>
-                            <input type="text" id="phone2" placeholder="Введите телефон"/>
+                            <input class="form_ad_action_name" type="text" id="name2" placeholder="Введите имя"/>
+                            <div><input class="form_ad_action_phone" type="text" id="phone2" placeholder="Введите телефон"/><span class="change_format">формат</span></div>
 
                             <button id="getcard2" type="button" class="ui_button ui_button_green_hover c_font25">ОТПРАВИТЬ</button>
                         </form>
+                    </div>
+                    <div class="wrap_right tmpl_ad_order_complete">
+                        <span class="ad_order_title">ЗАЯВКА ПРИНЯТА<br>СПАСИБО!</span>
                     </div>
                 </div>
             </div>

@@ -217,6 +217,10 @@ body > .body_wrapper {
     color: #2cafff;
     border: 3px solid #2cafff;
 }
+.sector_title_span.orange span {
+    color: #ff4200;
+    border: 3px solid #ff4200;
+}
 .sector_bottom_shadow {
     position: absolute;
     width: 100%;
@@ -525,8 +529,25 @@ body > .body_wrapper {
 
 
 
-.tmpl_ad_order { }
-.ad_order_title > .arrow_big_right {
+.tmpl_ad_order {
+    /*display: none;*/
+}
+.tmpl_ad_order_complete {
+    display: none;
+}
+.tmpl_ad_order_complete > .ad_order_title {
+    display: inline-block;
+    text-align: center;
+    width: 320px;
+    height: 100px;
+
+    display: inline-block;
+    font-size: 35px;
+    color: #ffffff;
+    line-height: 40px;
+    margin-top: 180px;
+}
+.tmpl_ad_order > .ad_order_title > .arrow_big_right {
     position: absolute;
     top: 15px;
     left: -120px;
@@ -534,13 +555,13 @@ body > .body_wrapper {
     height: 70px;
     background: url(/images/arrow_big_right.png);
 }
-.ad_order_title {
+.tmpl_ad_order > .ad_order_title {
     display: inline-block;
     text-align: center;
     width: 320px;
     height: 100px;
 }
-.ad_order_title span {
+.tmpl_ad_order > .ad_order_title span {
     display: inline-block;
     font-size: 35px;
     color: #ffffff;
@@ -557,15 +578,16 @@ body > .body_wrapper {
 }
 .ad_order_form { }
 .ad_order_form input[type="text"] {
+    text-align: center;
     display: inline-block;
     width: 380px;
     background: transparent;
-    font-size: 28px;
-    line-height: 40px;
+    font-size: 36px;
+    line-height: 46px;
     color: #ffffff;
     border: none;
     border-bottom: 1px solid #ffffff;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     outline: none;
 }
 .ad_order_form input[type="submit"] {
@@ -578,8 +600,19 @@ body > .body_wrapper {
     color: rgba(255,255,255,0.5);
     /*text-transform:uppercase;*/
 }
-
-
+.change_format {
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    font-size: 12px;
+    border-bottom: 1px dotted #ffffff;
+    color: #ffffff;
+    cursor: pointer;
+}
+.change_format:hover {
+    opacity: 1 !important;
+}
 
 .tmpl_sector_why_we {
     padding-bottom: 150px;
