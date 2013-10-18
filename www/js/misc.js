@@ -78,7 +78,7 @@ $(document).ready(function(){
 		if (phone.length > 0) {
 			var data = {
 				name: $('#name' + id).val(),
-                order: $('.form_proposal_order').data('order_proposal') || 'didn\'t selected',
+                order: $('.form_proposal_order').data('order_proposal') || 'wasn\'t selected',
 				phone: phone
 			};
             console.log(data);
